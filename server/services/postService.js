@@ -17,11 +17,11 @@ const constraints = {
   }
 };
 
-async function getByTagName(name) {
+async function getByTag(name) {
   try {
     const tag = await db.tag.findOne({ where: { name } });
     const allPosts = await tag.getPosts({ include: [db.user, db.tag] });
-    /* Om allt blev bra, returnera allPosts */
+
     return createResponseSuccess(allPosts.map((post) => _formatPost(post)));
   } catch (error) {
     return createResponseError(error.status, error.message);
@@ -211,7 +211,7 @@ async function _addTagToPost(post, tags) {
 }
 
 module.exports = {
-  getByTagName,
+  getByTag,
   getByAuthor,
   getById,
   getAll,

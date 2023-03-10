@@ -12,13 +12,10 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.20",
-    "pg": "^8.9.0",
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.29.0",
+    "sequelize": "^6.29.3",
     "validate.js": "^0.13.1"
-  },
-  "devDependencies": {
-    "cors": "^2.8.5"
   }
 }
