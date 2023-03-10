@@ -11,5 +11,5 @@ docker run -d --name gik2xk_blog_db -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB
 ### Start the backend
 
 ```sh
-npm run app.js
+npm run start
 ```
